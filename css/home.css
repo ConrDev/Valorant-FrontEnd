@@ -39,7 +39,7 @@ section {
     left: 0;
     right: 0;
     content: "";
-    z-index: 0;
+    /* z-index: 0; */
     position: relative
 }
 
@@ -70,7 +70,7 @@ section .content {
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
-    z-index: 99;
+    z-index: 999;
 }
 
 /* .nav-wrapper {
