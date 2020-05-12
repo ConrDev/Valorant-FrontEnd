@@ -267,6 +267,7 @@ li, a {
     text-shadow: 0 0 5px #111111;
     width: 500px;
     line-height: 1;
+    height: max-content;
 }
 
 .content .split {
@@ -287,6 +288,7 @@ li, a {
     /* border-top-left-radius: 50px;
     border-bottom-right-radius: 50px; */
     border-style: none;
+    height: max-content;
 }
 
 .info::before {
@@ -356,7 +358,7 @@ li, a {
     object-fit: cover;
     -o-object-fit: cover;
     z-index: 1;
-    position: relative;
+    position: absolute;
 }
 
 #midwrapper {
