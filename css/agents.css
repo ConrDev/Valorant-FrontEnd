@@ -468,6 +468,7 @@ li, a {
     position: relative;
     margin-left: 150px;
     overflow: hidden;
+    
 }
 
 .slide-wrapper {
@@ -481,6 +482,12 @@ li, a {
     /* margin-top: 150px; */
     /* cursor: grab; */
     /* left: -300px; */
+    top: 50%;
+    /* transform: translateY(-50%); */
+}
+
+.slide-wrapper::-webkit-scrollbar-track {
+    background: transparent;
 }
 
 #slide-wrapper.shifting {
