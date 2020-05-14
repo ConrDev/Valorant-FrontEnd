@@ -410,29 +410,39 @@ li, a {
 }
 
 #first {
-    
+    margin-bottom: 100px;
 }
 
 .game-preview {
-    margin-top: 450px;
-    margin-left: 400px;
-    width: 300px;
-    background-color: #0f1923;
-    height: 50px;
+    /* margin-top: 100px; */
+    margin-left: 200px;
+    width: 500px;
+    /* background-color: #0f1923; */
+    height: 300px;
 }
 
 .game-preview .vid {
     width: 100%;
+    height: 100%;
     object-fit: cover;
     -o-object-fit: cover;
     z-index: 1;
-    transform: translate(-150px , -225px) scale(2);
+    /* transform: translate(-150px , -225px) scale(2); */
     /* right: -325px; */
     /* right: 0; */
 }
 
+.game-preview .vid-accent {
+    background-color: #0f1923;
+    width: 400px;
+    height: 25px;
+    position: relative;
+    bottom: 10px;
+    left: 100px;
+}
+
 #second {
-    
+    width: 750px
 }
 
 #bottomwrapper {

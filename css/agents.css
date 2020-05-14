@@ -468,7 +468,8 @@ li, a {
     position: relative;
     margin-left: 150px;
     overflow: hidden;
-    
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .slide-wrapper {
@@ -482,12 +483,16 @@ li, a {
     /* margin-top: 150px; */
     /* cursor: grab; */
     /* left: -300px; */
-    top: 50%;
-    /* transform: translateY(-50%); */
+    /* top: 50%; */
+    /* transform: translateY(50%); */
 }
 
 .slide-wrapper::-webkit-scrollbar-track {
     background: transparent;
+}
+
+.slide-wrapper::-webkit-scrollbar-thumb {
+    background: #ECE8E1;
 }
 
 #slide-wrapper.shifting {
