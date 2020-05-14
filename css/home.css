@@ -40,7 +40,7 @@ section {
     right: 0;
     content: "";
     /* z-index: 0; */
-    position: relative
+    position: relative;
 }
 
 section .content {
