@@ -429,8 +429,11 @@ li, a {
     left: -550px;
     /* float: left; */
     font-style: italic;
-    rotate: 90deg;
-    transform: translateX(50%);
+    -o-transform: rotate(90deg) translateX(50%);
+    -moz-transform: rotate(90deg) translateX(50%);
+    -ms-transform: rotate(90deg) translateX(50%);
+    -webkit-transform: rotate(90deg) translateX(50%);
+    transform: rotate(90deg) translateX(50%);
 }
 
 /* #agentswrapper .bg-title h1 {
@@ -594,7 +597,11 @@ li, a {
 }
 
 .agent-container .agent-info .title {
-    rotate: 90deg;
+    -o-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
     left: -150px;
     top: 120px;
     font-size: 3.5vw !important;
@@ -608,7 +615,11 @@ li, a {
 
 .agent-container .agent-info p {
     color: #FF4655;
-    rotate: 90deg;
+    -o-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
     left: -100px;
     top: 20px;
     font-size: 1.75vw !important;
