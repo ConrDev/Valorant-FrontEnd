@@ -374,6 +374,7 @@ li, a {
     background-color: rgb(255, 70, 86);
     /* background-image: url("../assets/images/jpg/art/Beta Key Art_VALORANT.jpg"); */
     z-index: 6;
+    overflow: hidden;
 }
 
 #agentswrapper::after {
@@ -431,6 +432,10 @@ li, a {
     rotate: 90deg;
     transform: translateX(50%);
 }
+
+/* #agentswrapper .bg-title h1 {
+    position: absolute;
+} */
 
 #agentswrapper .content .title {
     margin-top: 150px;
@@ -518,6 +523,12 @@ li, a {
     mix-blend-mode: difference
 }
 
+.agent-container:hover > .agent-info p {
+    -webkit-text-fill-color: #FF4655;
+    -webkit-text-stroke-width: .75px;
+    -webkit-text-stroke-color: #111111;
+}
+
 .agent-container {
     position: relative;
     width: 300px;
@@ -577,7 +588,7 @@ li, a {
     /* width: 300px; */
     height: 800px;
     top: 80%;
-    left: 50%;
+    left: 60%;
     transform: translate(-50%, -50%);
     transition: all .15s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
@@ -585,10 +596,27 @@ li, a {
 .agent-container .agent-info .title {
     rotate: 90deg;
     left: -150px;
-    top: 100px;
-    font-size: 2.75vw !important;
+    top: 120px;
+    font-size: 3.5vw !important;
+    font-family: 'Rajdhani', sans-serif;
     z-index: 99;
+    font-weight: 900;
     mix-blend-mode: difference;
+
+    /* transition: all .25s cubic-bezier(0.445, 0.05, 0.55, 0.95); */
+}
+
+.agent-container .agent-info p {
+    color: #FF4655;
+    rotate: 90deg;
+    left: -100px;
+    top: 20px;
+    font-size: 1.75vw !important;
+    z-index: 99;
+    font-weight: 700;
+    font-family: 'Rajdhani', sans-serif;
+    position: relative;
+    /* mix-blend-mode: difference; */
     /* transition: all .25s cubic-bezier(0.445, 0.05, 0.55, 0.95); */
 }
 
