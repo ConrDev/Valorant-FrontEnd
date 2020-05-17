@@ -29,31 +29,34 @@ body {
     min-width: 100%;
     height: 100vh;
     font-family: 'Rajdhani', sans-serif;
+    background-color: #ECE8E1;
 }
 
 section {
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     content: "";
     /* z-index: 0; */
-    position: relative
+    position: relative;
 }
 
 section .content {
-    position: absolute;
+    position: relative;
     /* margin: 100px auto 0 auto; */
     margin: 0 auto;
     z-index: 5;
-    left: 15%;
-    right: 15%;
+    /* left: 15%;
+    right: 15%; */
     border-left: solid 1px #D6D3CC;
-    bottom: 0;
-    top: 0;
+    /* bottom: 0;
+    top: 0; */
+    width: 75%;
     height: 100%;
+    padding: 5% 0;
 }
 
 #mapswrapper {
@@ -70,8 +73,8 @@ section .content {
     align-items: center;
     padding: 30px 10%;
     z-index: 999;
+    top: 0;
 }
-
 /* .nav-wrapper {
     width: 100%;
     height: 100%;
@@ -254,7 +257,7 @@ li, a {
 }
 
 #mapswrapper .content {
-    margin: 100px auto 0 auto;
+    /* margin: 100px auto 0 auto; */
     border-right: solid 1px #D6D3CC;
     z-index: 5;
 }
@@ -364,21 +367,23 @@ li, a {
     -o-object-fit: cover;
     z-index: 1;
     position: absolute;
+    top: 0;
 }
 
 #midwrapper {
-    height: 400vh;
+    height: auto;
     background-color: #ECE8E1;
     z-index: 6;
     overflow: hidden;
+    margin-bottom: 50px;
 }
 
 #midwrapper .content {
-    right: 0;
+    width: 100%;
 }
 
 #midwrapper .bg-title {
-    position: relative;
+    position: absolute;
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
     font-size: 9.75vw;
@@ -419,6 +424,8 @@ li, a {
 ===================*/
 
 .maps-container {
+    position: relative;
+    left: 15%;
     width: 100%;
     margin-bottom: 200px;
     /* overflow: hidden; */
@@ -522,7 +529,7 @@ li, a {
     margin-top: 150px;
     object-fit: none;
     float: right;
-    margin-right: 50px;
+    margin-right: 100px;
 }
 
 .maps-container .map-right .image-container {
@@ -530,9 +537,10 @@ li, a {
     width: 560px;
     height: 280px;
     background-color: #11111133;
-    right: -25px;
+    right: -70px;
     margin: -30px;
     float: right;
+    margin-left: 5px;
 }
 
 .maps-container .map-right .image-container img {
@@ -663,7 +671,7 @@ li, a {
 }
 
 #creditswrapper {
-    border-top: solid 50px #ECE8E1;
+    /* border-top: solid 50px #ECE8E1; */
     min-height: 50vh;
     background-color: #111111;
 }
@@ -687,9 +695,19 @@ li, a {
         margin-left: 0;
         width: 100%;
     }
+
+    .maps-container .map-right {
+        width: 100%;
+    }
+    .maps-container .map-left {
+        width: 100%;
+    }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 768px) {
+    .nav-wrapper {
+        display: none;
+    }
     #bottomwrapper {
         height: 225vh;
         background-color: #0f1923;
