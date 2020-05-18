@@ -34,7 +34,7 @@ body {
 
 section {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     top: 0;
     bottom: 0;
     left: 0;
@@ -374,12 +374,12 @@ li, a {
     object-fit: cover;
     -o-object-fit: cover;
     z-index: -1;
-    position: absolute;
+    position: fixed;
 }
 
 #agentswrapper {
     width: 100%;
-    height: 100vh;
+    height: auto;
     /* box-sizing: content-box; */
     background-color: rgb(255, 70, 86);
     /* background-image: url("../assets/images/jpg/art/Beta Key Art_VALORANT.jpg"); */
@@ -404,7 +404,7 @@ li, a {
 } */
 
 #agentswrapper .content {
-    margin-top: 50px;
+    /* margin-top: -200px; */
     right: 0;
     border-left: none;
     /* transform: translateY(-50vh); */
@@ -422,12 +422,11 @@ li, a {
 }
 
 #agentswrapper .bg-title {
-    top: 50px;
-    position: relative;
+    position: absolute;
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
-    font-size: 7.5vw;
-    color: #D6D3CC;
+    font-size: 100px;
+    color: rgb(162, 155, 139);
     /* text-shadow: 0 0 5px #111111; */
     /* width: 500px; */
     line-height: 1;
@@ -436,14 +435,9 @@ li, a {
     -webkit-text-stroke-color: #D6D3CC;
     z-index: 1;
     width: 100%;
-    left: -550px;
-    /* float: left; */
+    left: 20px;
     font-style: italic;
-    -o-transform: rotate(90deg) translateX(50%);
-    -moz-transform: rotate(90deg) translateX(50%);
-    -ms-transform: rotate(90deg) translateX(50%);
-    -webkit-transform: rotate(90deg) translateX(50%);
-    transform: rotate(90deg) translateX(50%);
+    margin-top: 150px;
 }
 
 /* #agentswrapper .bg-title h1 {
@@ -470,6 +464,21 @@ li, a {
     display: grid;
     grid-template-columns: 325px 1fr;
     /* position: relative; */
+}
+
+.agents-container {
+    width: 100%;
+    position: relative;
+    margin-left: 150px;
+    overflow: hidden;
+    /* top: 50%;
+    transform: translateY(-50%); */
+}
+
+.agents-wrapper {
+    display: grid;
+    grid-template-columns: 325px 1fr;
+    grid-gap: 0 20%;
 }
 
 .slide-container {
@@ -654,9 +663,11 @@ li, a {
 }
 
 #creditswrapper {
-    border-top: solid 50px #ECE8E1;
+    /* border-top: solid 50px #ECE8E1; */
     min-height: 50vh;
     background-color: #111111;
+    position: relative;
+    z-index: 999; 
 }
 
 #creditswrapper .content {
