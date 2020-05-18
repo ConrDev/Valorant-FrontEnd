@@ -33,7 +33,7 @@ body {
 
 section {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     top: 0;
     bottom: 0;
     left: 0;
@@ -60,6 +60,7 @@ section .content {
 
 #introwrapper {
     background-color: #ECE8E1;
+    height: auto;
 }
 
 .nav-wrapper  {
@@ -285,7 +286,7 @@ li, a {
 .content .info {
     margin-top: 100px;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 2em;
     width: 100%;
     position: relative;
     color: #ECE8E1;
@@ -407,7 +408,7 @@ li, a {
     color: #0f192347;
     background: none;
     width: 40%;
-    margin-left: 200px;
+    margin-left: 10vw;
     display: grid;
     grid-template-columns: 325px 1fr;
     /* position: relative; */
@@ -419,10 +420,13 @@ li, a {
 
 .game-preview {
     /* margin-top: 100px; */
-    margin-left: 200px;
+    margin-left: 10vw;
     width: 500px;
     /* background-color: #0f1923; */
     height: 300px;
+    position: relative;
+    margin-bottom: 100px;
+    float: right;
 }
 
 .game-preview .vid {
@@ -446,7 +450,7 @@ li, a {
 }
 
 #second {
-    width: 750px
+    width: 750px;
 }
 
 #bottomwrapper {
@@ -484,7 +488,7 @@ li, a {
     display: grid;
     margin-top: 100px;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 2em;
     /* width: max-content; */
     position: relative;
     color: #ECE8E1;
@@ -512,7 +516,7 @@ li, a {
 }
 
 #creditswrapper {
-    border-top: solid 50px #ECE8E1;
+    /* border-top: solid 50px #ECE8E1; */
     min-height: 50vh;
     background-color: #111111;
 }
@@ -528,6 +532,22 @@ li, a {
     #introwrapper .content .info {
         margin-top: 225px;
     }
+
+    #midwrapper .content .info {
+        margin-left: 0;
+        grid-template-columns: 325px;
+    }
+
+    .game-preview {
+        /* margin-top: 100px; */
+        margin-left: 0;
+        float: left;
+    }
+
+    #second {
+        width: 75vw;
+    }
+
     #bottomwrapper .content .info {
         grid-template-columns: 1fr;
     }
@@ -538,7 +558,10 @@ li, a {
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 768px) {
+    #second {
+        width: 75vw;
+    }
     /* #bottomwrapper {
         height: 225vh;
         background-color: #0f1923;
